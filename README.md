@@ -57,6 +57,8 @@ python app.py
 
 - I hope it helps someone, and can help in studies aimed at webcrawler + selenium.
 
+- Put "?autoplay=1" in end of video link and use absolute link, final link will be like: https://www.youtube.com/watch?v=xxxxxxxxxxx?autoplay=1
+
 ## Issues
 - The script does not show the debug messages (print), in some cases when updating it appears but it is a bug that needs to be adjusted.
 
