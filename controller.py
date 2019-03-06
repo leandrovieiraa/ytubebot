@@ -19,8 +19,7 @@ class Controller():
         
         # Instance minimized driver
         driver = webdriver.Chrome(chrome_options=options, executable_path=r'./driver/chromedriver.exe')
-        driver.minimize_window()
-
+        
         # video data
         video_url = video_data['url']
         views = video_data['views']
@@ -29,6 +28,9 @@ class Controller():
         for view in range(0, views):
             # load video url in chrome driver
             driver.get(video_url)
+
+            # minimize window
+            driver.minimize_window()
 
             # variable for check if video is playing
             video_is_playing = True
